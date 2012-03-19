@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+
+		<title>Kenect Demo - Zara</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		
+		<link rel="stylesheet" href="supersized/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="supersized/theme/supersized.default.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/application.css" type="text/css" media="screen" />
+	</head>
+
+<body>
+  
+	<div id="page-title">Kinect Demo</div>
+  
+	<div id="slidecaption2" class="img-title"></div>
+  <a id="menu-button" href="#">
+    <img src="img/demo/icons_thumbs/iscreen_menu_icon.png" alt="menu">
+  </a>
+  <a id="like-button" href="#" >
+    <img src="img/demo/icons_thumbs/iscreen_like_icon.png" alt="like">
+  </a>
+	<!--Thumbnail Navigation-->
+	<div id="prevthumb"></div>
+	<div id="nextthumb"></div>
+	
+	<!--Arrow Navigation-->
+	<a id="prevslide" class="load-item"></a>
+	<a id="nextslide" class="load-item"></a>
+	
+	<div id="thumb-tray" class="load-item">
+		<div id="thumb-back"></div>
+		<div id="thumb-forward"></div>
+	</div>
+	
+	<!--Time Bar-->
+	<!--	
+	<div id="progress-back" class="load-item">
+		<div id="progress-bar"></div>
+	</div>
+	-->
+	<!--Control Bar-->
+	<div id="controls-wrapper" class="load-item">
+		<div id="controls">
+			
+			<a id="play-button"><img id="pauseplay" src="img/pause.png"/></a>
+		
+			<!--Slide counter-->
+			<div id="slidecounter">
+				<span class="slidenumber"></span> / <span class="totalslides"></span>
+			</div>
+			
+			<!--Slide captions displayed here-->
+			<div id="slidecaption"></div>
+			
+			<!--Thumb Tray button-->
+			<a id="tray-button"><img id="tray-arrow" src="img/button-tray-up.png"/></a>
+			
+			<!--Navigation-->
+			<ul id="slide-list"></ul>
+			
+		</div>
+	</div>
+	
+  
+  <div id="menu-popup" class="jqmWindow" >
+    <h2>COLLECTIONS</h2>
+    <ul class="thumbnails" id="cat-list">
+      <li class="current-item" id="cat-0">
+        <a class="thumbnail" href="index.html">
+          <img src="img/demo/icons_thumbs/iscreen_cata_01.png" alt="woman">
+        </a>
+      </li>
+      <li id="cat-1">
+        <a class="thumbnail" href="man.html" >
+          <img src="img/demo/icons_thumbs/iscreen_cata_02.png" alt="man">
+        </a>
+      </li>
+      <li id="cat-2">
+        <a class="thumbnail" href="kid.html" >
+          <img src="img/demo/icons_thumbs/iscreen_cata_03.png" alt="kid">
+        </a>
+      </li>
+    </ul>
+    <div id="dialog-action">
+      <a id="exit-dialog-button" href="#" class="jqmClose">
+        <img src="img/demo/icons_thumbs/iscreen_exit_icon.png"  alt="exit">
+      </a>
+      <a id="help-dialog-button" href="#" >
+        <img src="img/demo/icons_thumbs/iscreen_help_icon.png"  alt="help">
+      </a>
+    </div>
+  </div>
+  
+  <div id="like-popup" class="jqmWindow" >
+    <h2>LIKE</h2>
+    
+    <div id="like-dialog-action">
+      <a id="exit-like-button" href="#" class="jqmClose">
+        <img src="img/demo/icons_thumbs/iscreen_exit_icon.png"  alt="exit">
+      </a>
+      <a id="help-like-button" href="#" ">
+        <img src="img/demo/icons_thumbs/iscreen_help_icon.png"  alt="help">
+      </a>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var images = [			// Slideshow Images
+											{image : 'img/demo/kid/zara_kid_01_big.jpeg', title : 'Zara kid 01', thumb : 'kid/zara_kid_01.jpeg'},
+                      {image : 'img/demo/kid/zara_kid_02_big.jpeg', title : 'Zara kid 02', thumb : 'kid/zara_kid_02.jpeg'},
+                      {image : 'img/demo/kid/zara_kid_03_big.jpeg', title : 'Zara kid 03', thumb : 'kid/zara_kid_03.jpeg'},
+                      {image : 'img/demo/kid/zara_kid_04_big.jpeg', title : 'Zara kid 04', thumb : 'kid/zara_kid_04.jpeg'},
+                      {image : 'img/demo/kid/zara_kid_05_big.jpeg', title : 'Zara kid 05', thumb : 'kid/zara_kid_05.jpeg'},
+                      {image : 'img/demo/kid/zara_kid_06_big.jpeg', title : 'Zara kid 06', thumb : 'kid/zara_kid_06.jpeg'}
+									];
+
+  		</script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jqmodal.js"></script>
+	<script type="text/javascript" src="supersized/supersized.3.2.6.js"></script>
+	<script type="text/javascript" src="supersized/theme/supersized.default.js"></script>
+	<script type="text/javascript" src="js/application.js"></script>
+	
+</body>
+</html>
