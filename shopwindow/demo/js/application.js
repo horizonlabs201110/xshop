@@ -65,7 +65,13 @@ jQuery(function($){
 				$(document.documentElement).keyup(function (event) {
 					//http://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes for key code
 					// Letter m
-					if (event.keyCode == 77) {
+					if (event.keyCode == 65) {  //key:a
+						$('#bg-sound').html(
+							"<embed src='peoplein.mp3' hidden=true autostart=true loop=false>");
+					} else if (event.keyCode == 66) { //key:b
+						$('#bg-sound').html(
+							"<embed src='peoplein.mp3' hidden=true autostart=true loop=false>");
+					} else if (event.keyCode == 77) {
 						if (!vars.stop_slideshow) {
 							$('#menu-popup').jqmShow();
 						}
